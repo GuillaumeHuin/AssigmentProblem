@@ -6,6 +6,8 @@ mat = [
     [1, 4, 2, 6],
     [5, 3, 7, 2]]
 
+"""A voir : encapsulation de ces méthodes dans la classe arbre"""
+
 """
 Algo de construction de l'arbre : on encode toutes les solutions de la forme [i, j ,k, l] dans un arbre
 """
@@ -22,11 +24,9 @@ def construction(n):
 
 
 """
-Ecrit les scores sur chaque noeuds 
-Ici on ne le fait pas en POO pur parce qu'on conde en dur les scores minimum, sinon c'est plus lourd
-pour traiter le cas général.
+Ecrit les scores sur chaque noeud
 args:
-scoreMin : cumul des scores min de haut en bas des parents.
+scoreMin : cumul des scores min de haut en bas des parents. Au dernier niveau scoreMin correspond au score effectif.
 """
 def ecritureScores(arbre:A):
     if arbre.val:
